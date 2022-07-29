@@ -5,10 +5,10 @@ class Tovy {
         this.url = url;
         this.apiKey = apiKey;
         if (!this.url) {
-            throw new Error('URL is required');
+            throw new Error('URL is required.');
         }
         if (!this.apiKey) {
-            throw new Error('API key is required');
+            throw new Error('API key is required.');
         }
 
         if (this.url.endsWith('/')) {
