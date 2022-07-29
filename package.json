@@ -1,0 +1,21 @@
+{
+  "name": "tovy",
+  "version": "1.0.0",
+  "description": "a package that allows you to interact with the tovy api",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "tovy",
+    "roblox",
+    "github",
+    "oss"
+  ],
+  "author": "brandonn",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
