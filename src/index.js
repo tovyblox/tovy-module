@@ -27,7 +27,7 @@ class Tovy {
             'promote': this.url + '/api/ranking/promote',
             'demote': this.url + '/api/ranking/demote',
             'setrank': this.url + '/api/ranking/setrank',
-            'shout': this.url + '/api/shout',
+            'shout': this.url + '/api/ranking/shout',
         }
 
         this.urls = URLS;
@@ -39,11 +39,7 @@ class Tovy {
             user: userid
         }).catch(err => {
             throw new Error(err);
-        })
-        
-        if (req.status === 500) {
-            throw new Error(req.data.message);
-        }
+        })    
     }
     async demote (userid) {
         let req = await this.axios.post(this.urls.demote, {
@@ -51,10 +47,6 @@ class Tovy {
         }).catch(err => {
             throw new Error(err);
         })
-
-        if (req.status === 500) {
-            throw new Error(req.data.message);
-        }
     }
     async setrank (userid, rankid) {
         let req = await this.axios.post(this.urls.setrank, {
@@ -63,10 +55,6 @@ class Tovy {
         }).catch(err => {
             throw new Error(err);
         })
-
-        if (req.status === 500) {
-            throw new Error(req.data.message);
-        }
     }
     async shout (message) {
         let req = await this.axios.post(this.urls.shout, {
@@ -74,10 +62,6 @@ class Tovy {
         }).catch(err => {
             throw new Error(err);
         })
-
-        if (req.status === 500) {
-            throw new Error(req.data.message);
-        }
     }
 }
 

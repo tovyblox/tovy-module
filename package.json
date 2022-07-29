@@ -1,5 +1,5 @@
 {
-  "name": "tovy",
+  "name": "tovy-api",
   "version": "1.0.0",
   "description": "a package that allows you to interact with the tovy api",
   "main": "src/index.js",
